@@ -1,12 +1,3 @@
-const {
-    validationResult
-} = require("express-validator");
-const {
-    TokenExpiredError
-} = require("jsonwebtoken");
-const {
-    JsonWebTokenError
-} = require("jsonwebtoken");
 const jwt = require("jsonwebtoken");
 
 function collectToken(req) {

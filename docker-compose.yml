@@ -9,6 +9,7 @@ services:
     volumes:
       - mongo_db:/data/db
   api:
+    container_name: movies_app
     build: .
     ports:
       - 4000:3000

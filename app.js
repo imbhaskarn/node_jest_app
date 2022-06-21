@@ -9,7 +9,8 @@ app.use(express.urlencoded({
     extended: true
 }))
 //database connection
-mongoose.connect(process.env.MONGO_DB_URI, (err, data) => {
+console.log(process.env.MONGO_DB_URI)
+mongoose.connect(process.env.MONGO_DB_URI || 'mongodb://localhost:27017/myapp', (err, data) => {
     if (!err) {
         return console.log('connected to database!')
     }

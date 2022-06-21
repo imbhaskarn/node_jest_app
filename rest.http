@@ -1,0 +1,29 @@
+### Check api status
+GET http://localhost:4000/api
+Content-Type: application/json
+
+
+
+### create a new account
+POST http://localhost:4000/api/signup
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNjIyYzcwZGYzMmNmYTg2Y2UyZGZhYWE3IiwiaWF0IjoxNjQ3MDc5NjQ3LCJleHAiOjE2NDcxNjYwNDd9.m7Q9Fyg3HO_j_FaE2HovuNBHGeItCk9Btvhg-M5SXzk"
+
+{	"names": "myname",
+ 	"username":"username1",
+ 	"password":"bhaskar@1"
+ }
+
+
+### signin to an existing account
+
+POST http://localhost:4000/api/signin
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNjIyYzcwZGYzMmNmYTg2Y2UyZGZhYWE3IiwiaWF0IjoxNjQ3MDc5NjQ3LCJleHAiOjE2NDcxNjYwNDd9.m7Q9Fyg3HO_j_FaE2HovuNBHGeItCk9Btvhg-M5SXzk
+
+{
+	"username":"user",
+	"password":"password@1"
+ }
+
+

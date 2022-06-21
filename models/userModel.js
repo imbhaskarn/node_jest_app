@@ -16,13 +16,7 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true,
-    },
-    role: {
-        type: String,
-        enum: ['admin', 'accountant', 'basic'],
-        default: 'basic',
-        description: "role must be basic, accountant or admin"
     }
 })
-const User = mongoose.model('erpuser', userSchema)
+const User = mongoose.model('user', userSchema)
 module.exports = User

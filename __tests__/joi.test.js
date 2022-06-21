@@ -1,0 +1,1 @@
+const signUpValidate = require("..//middlewares/validator")

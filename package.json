@@ -4,20 +4,21 @@
   "description": "Gst based taxation system",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js",
+    "test": "jest"
   },
   "author": "Bhaskar",
   "license": "ISC",
   "dependencies": {
-    "accesscontrol": "^2.2.1",
     "bcrypt": "^5.0.1",
     "express": "^4.17.3",
-    "express-validator": "^6.14.0",
+    "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.5"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15"
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16"
   }
 }
